@@ -38,6 +38,8 @@ namespace NFe.Classes.Informacoes.Transporte
     ///     <para>0=Por conta do emitente;</para>
     ///     <para>1=Por conta do destinatário/remetente;</para>
     ///     <para>2=Por conta de terceiros;</para>
+    ///     <para>3=Proprio remetente (V4.0);</para>
+    ///     <para>4=Proprio destinarario (V4.0);</para>
     ///     <para>9=Sem frete. (V2.0)</para>
     /// </summary>
     public enum ModalidadeFrete
@@ -45,6 +47,8 @@ namespace NFe.Classes.Informacoes.Transporte
         [XmlEnum("0")] mfContaEmitente,
         [XmlEnum("1")] mfContaDestinatario,
         [XmlEnum("2")] mfContaTerceiros,
+        [XmlEnum("3")] mfProprioRemetente,
+        [XmlEnum("4")] mfProprioDestinatario,
         [XmlEnum("9")] mfSemFrete
     }
 }
